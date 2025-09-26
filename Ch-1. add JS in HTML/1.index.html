@@ -1,0 +1,59 @@
+<!-- structure of HTML by manual typing -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+  </head>
+  <body>
+    <main></main>
+    <footer></footer>
+  </body>
+</html> -->
+
+<!-- Now embedding JS in HTML using Different Methods -->
+
+<!-- We can add or use JS in our HTML program using 3 methods: -->
+
+<!-- 1. In the head tag using the script tag and the src attribute to add an external file -->
+
+<!-- 2. Using a script tag in the body tag at the end for better performance -->
+
+<!-- 3. Using a script tag to write JS code directly in the HTML document -->
+
+<!--
+ Method	    Description	                          Best Use Case
+Internal	Script within HTML using <script>	Small scripts or quick testing
+External	Separate .js file linked via src	Large projects, reusable scripts
+Inline	   JavaScript directly in HTML attributes	Simple, quick interactions
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS in HTML</title>
+
+    <!-- 1. Using an external file in the head section -->
+    <!-- <script src="1.index.js"></script> -->
+  </head>
+  <body>
+    <p id="demo">guest</p>
+    <button id="btn" onclick="myFunction">log in</button>
+
+    <!-- 2. Inline JS code in the body section -->
+    <!-- <script>
+      //   document.getElementById("demo").textContent = "This is JS script";
+
+      document
+        .getElementById("btn")
+        .addEventListener("click", function myFunction() {
+          document.getElementById("demo").innerHTML = "logged in";
+        });
+    </script> -->
+
+    <!-- 3. Using an external file in the body section -->
+    <script src="1.index.js" defer></script>
+  </body>
+</html>
